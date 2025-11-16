@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Patryk Tokarski</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f7fa;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: #1a202c;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #718096;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            border: 1px solid #e2e8f0;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .project-card h2 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .project-card p {
+            color: #718096;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .project-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .badge-container {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .status-active {
+            background: #10b981;
+            color: white;
+        }
+
+        .status-beta {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .status-archived {
+            background: #6b7280;
+            color: white;
+        }
+
+        .lang-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            background: #3b82f6;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            color: #718096;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Projects</h1>
+            <p class="subtitle">projects.tokarskipatryk.github.io</p>
+        </header>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="badge-container">
+                    <span class="status-badge status-active">Active</span>
+                    <span class="lang-badge">PL</span>
+                </div>
+                <h2>LubelskiRowerMiejski</h2>
+                <p>View the history of available bikes and routes traveled by each of them.</p>
+                <a href="https://lubelskirower.tokarski.ovh" class="project-link">View project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="badge-container">
+                    <span class="status-badge status-active">Active</span>
+                    <span class="lang-badge">EN</span>
+                </div>
+                <h2>Tech Blog</h2>
+                <p>Blog about programming, latest technologies and experiences from the IT industry.</p>
+                <a href="https://dataengineeringtoolkit.substack.com/" class="project-link">View project →</a>
+            </div>
+
+            <!-- Template for adding new projects -->
+            <!-- 
+            <div class="project-card">
+                <div class="badge-container">
+                    <span class="status-badge status-active">Active</span>
+                    <span class="lang-badge">EN</span>
+                </div>
+                <h2>Project Name</h2>
+                <p>Project description - brief presentation of main features and purpose.</p>
+                <a href="/path" class="project-link">View project →</a>
+            </div>
+            -->
+        </div>
+
+        <footer>
+            <p>&copy; tokarski.ovh | All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
