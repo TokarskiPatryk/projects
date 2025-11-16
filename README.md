@@ -2,7 +2,7 @@
 
 A clean and modern portfolio page showcasing my projects.
 
-🌐 **Live Site:** [projects.tokarskipatryk.github.io](https://projects.tokarskipatryk.github.io)
+🌐 **Live Site:** [tokarskipatryk.github.io/projects](https://tokarskipatryk.github.io/projects)
 
 ## Features
 
